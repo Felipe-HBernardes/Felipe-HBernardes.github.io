@@ -1,111 +1,189 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Tour Booking</title>
-	<link rel="stylesheet" type="text/css" href="css/style3.css">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tour Booking</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Trirong"
+    />
 
-	<script>
-	  
-	 	 function thanks() {
-	    	alert( "Thank you for your booking. We will send you an email to confirm your booking very soon.");
-	  	}
-	  
-	 </script>
-		
-</head>
-<body>
-	<nav class="menu yellow sticky">
-        <ul class="main-nav">
-            <li> <a href="index.html">HOME</a></li>
-            <li> <a href="destination.html">TOUR DESTINATION</a></li>
-            <li> <a href="booking.html">TOUR BOOKINGS</a></li>
-            <li> <a href="deals.html">TOUR PACKAGE DEALS</a></li>
-            <li> <a href="gallery.html">GALLERY</a></li>
-            <li> <a href="testimonials.html">TESTIMONIALS</a></li>
-            <li> <a href="partners.html">INDUSTRY PARTNERS</a></li>
-            <li> <a href="staff.html">OUR STAFF</a></li>
-            <li> <a href="about.html">ABOUT US</a></li>
-            <li class="Contact"> <a href="contact.html">CONTACT</a></li>
-        </ul>   
+    <script>
+      function thanks() {
+        alert(
+          "Thank you for your booking. We will send you an email to confirm your booking very soon."
+        );
+      }
+    </script>
+  </head>
+  <body>
+    <nav class="menu yellow sticky">
+      <ul class="main-nav">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="destination.html">TOUR DESTINATION</a></li>
+        <li><a href="booking.html">TOUR BOOKINGS</a></li>
+        <li><a href="deals.html">TOUR PACKAGE DEALS</a></li>
+        <li><a href="gallery.html">GALLERY</a></li>
+        <li><a href="testimonials.html">TESTIMONIALS</a></li>
+        <li><a href="partners.html">INDUSTRY PARTNERS</a></li>
+        <li><a href="staff.html">OUR STAFF</a></li>
+        <li><a href="about.html">ABOUT US</a></li>
+        <li class="Contact"><a href="contact.html">CONTACT</a></li>
+      </ul>
     </nav>
 
+    <div class="text">
+      <h1>TOUR BOOKINGS</h1>
+    </div>
 
-	<div class="text">
-		<h1>TOUR BOOKINGS</h1>
-	</div>
+    <div class="container-booking">
+      <form style="margin: 0; padding: 0;">
+        <div class="interested_destination">
+          <label for="country" class="required">
+            Which Tour are you interested in?</label
+          >
+          <select id="country" name="country" required>
+            <option value="option">Select One Option ..</option>
+            <option value="tour1">Tour Package 1 - Hunter Valley tour</option>
+            <option value="tour2">Tour Package 2 - Nelson Bay tour</option>
+            <option value="tour3">Tour Package 3 - Operahouse tour</option>
+          </select>
+          <br /><label for="discount">Enter discount code(if applicable)</label>
+          <input
+            style="display: inline;"
+            type="text"
+            id="discount"
+            name="discount"
+          />
+        </div>
 
-	<div class="container">
-		<form style="margin: 0; padding: 0;">
+        <p class="required">Where did you hear about us?</p>
+        <div class="select-radio">
+          <input
+            type="radio"
+            id="facebook"
+            name="hear_about_us"
+            value="facebook"
+            required
+          />
+          <label for="facebook">Facebook</label><br />
+        </div>
 
-			<div class="interested_destination">
-				<label for="interested_destination" class="required"> Which Tour are you interested in?</label>
-				<select id="country" name="country" required>
-					<option value="option">Select One Option ..</option>
-					<option value="tour1">Tour Package 1  - Hunter Valley tour</option>
-					<option value="tour2">Tour Package 2 - Nelson Bay tour</option>
-					<option value="tour3">Tour Package 3 - Operahouse tour</option>
-				</select>
+        <div class="select-radio">
+          <input
+            type="radio"
+            id="instagram"
+            name="hear_about_us"
+            value="instagram"
+            required
+          />
+          <label for="instagram">Instagram</label><br />
+        </div>
+        <div class="select-radio">
+          <input
+            type="radio"
+            id="twitter"
+            name="hear_about_us"
+            value="twitter"
+            required
+          />
+          <label for="twitter">Twitter</label><br />
+        </div>
+        <div class="select-radio">
+          <input
+            type="radio"
+            id="google"
+            name="hear_about_us"
+            value="google"
+            required
+          />
+          <label for="google">Google</label><br />
+        </div>
+        <br /><label class="required">First Name</label>
+        <input type="text" name="participantone" required />
 
-				<br><label for="discount">Enter discount code(if applicable)</label>
-				<input style="display: inline;" type="text" name="discont">
+        <label>Last Name</label>
+        <input type="text" name="participantone" />
 
-			</div>
+        <br /><label class="required">Email Address</label>
+        <input type="text" name="email" required />
 
-			<p class="required"> Where did you hear about us?</p>
-			  
-			<input type="radio" id="facebook" name="hear_about_us" value="facebook" required>
-			<label for="facebook">Facebook</label><br>
+        <br /><label class="required">Address</label>
+        <input type="text" name="address" required />
 
-			<input type="radio" id="instagram" name="hear_about_us" value="instagram" required>
-			<label for="instagram">Instagram</label><br>
+        <br /><label class="required">Contact Number</label>
+        <input
+          style="margin-bottom: 10px"
+          type="text"
+          name="pnumber"
+          required
+        />
 
-			<input type="radio" id="twitter" name="hear_about_us" value="twitter" required>
-			<label for="twitter">Twitter</label><br>
+        <label for="subject"></label>
+        <textarea
+          id="subject"
+          name="subject"
+          placeholder="Do you have any special requirements?"
+          style="height:200px"
+        ></textarea>
+        <div class="select-radio">
+          <input id="terms" name="terms" type="checkbox" required />
+          <span class="required"
+            >I have read and accept
+            <a href="/things-to-do/sydney/terms-and-conditions" target="_blank"
+              >Terms and Conditions</a
+            ></span
+          >
+        </div>
+        <br />
+        <br />
+        <div class="paymentmethod">
+          <img
+            class="payment-option-1"
+            src="images/applepay.png"
+            height="50"
+            width="50"
+            onclick="selectPayment('1')"
+          />
+          <img
+            class="payment-option-2"
+            src="images/creditcard.png"
+            height="50"
+            width="50"
+            onclick="selectPayment('2')"
+          />
+        </div>
 
-			<input type="radio" id="google" name="hear_about_us" value="google" required>
-			<label for="google">Google</label><br>
-			  
-			  			 
-			<br><label for="participantone_fname" class="required">First Name</label>
-			<input type="text" name="participantone" required>
+        <br /><input type="submit" value="Submit" onclick="thanks()" />
+      </form>
+    </div>
 
-			<label for="participantone_lname">Last Name</label>
-			<input type="text" name="participantone">
+    <script>
+      function selectPayment(option) {
+        let payment1 = document.querySelector(".payment-option-1");
+        let payment2 = document.querySelector(".payment-option-2");
 
-			<br><label for="email" class="required">Email Address</label>
-			<input type="text" name="email" required>
+        console.log(payment1, payment2);
 
-			<br><label for="address" class="required">Address</label>
-			<input type="text" name="address" required>
+        if (option === "1") {
+          payment2.style.border = "none";
+          payment1.style.border = "2px solid black";
+        } else {
+          payment1.style.border = "none";
+          payment2.style.border = "2px solid black";
+        }
+      }
+    </script>
 
-			<br><label for="pnumber" class="required">Contact Number</label>
-			<input type="text" name="pnumber" required>
-
-			<label for="subject"></label>
-        	<textarea id="subject" name="subject" placeholder="Do you have any special requirements?" style="height:200px"></textarea>
-
-        	<input id="terms" name="terms" type="checkbox" required>
-        	<span class="required">I have read and accept <a href="/things-to-do/sydney/terms-and-conditions" target="_blank">Terms and Conditions</a></span> <br>
-
-        	<br><div class="paymentmethod">
-        		<button class="button1" type="checkbox"> <img src="images/applepay.png" height ="50" width="50"/> </button>
-        		<button class="button2" type="checkbox"> <img src="images/creditcard.png" height ="50" width="50"/> </button>
-        	</div> 
-
-        	  		
-
-			<br><input type="submit" value="Submit" onclick="thanks()">
-
-		</form>
-	</div>
-	
-	<footer class="yellow">
-        <p> 10 Barrack St, Sydney NSW 2000 | Phone: (02) 9093 5151 | Email: contact@freedomtours.com<br></p>
-        <p1>Copyright © 2022 Freedom Tours </p>
-        <a href="reference.html">REFERENCE</a>
-	</footer>
-</body>
+    <footer class="yellow">
+      <p>
+        10 Barrack St, Sydney NSW 2000 | Phone: (02) 9093 5151 | Email:
+        contact@freedomtours.com<br />
+      </p>
+      <p>Copyright © 2022 Freedom Tours</p>
+      <a href="reference.html">REFERENCE</a>
+    </footer>
+  </body>
 </html>
